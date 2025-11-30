@@ -1,7 +1,7 @@
 const btnQuizHistoria = document.getElementById('QuizHistoria');
 if (btnQuizHistoria) {
     btnQuizHistoria.addEventListener('click', function () {
-        window.location.href = '../HistoriaPreguntas.html';
+        window.location.href = 'HistoriaPreguntas.html';
     });
 }
 
@@ -60,7 +60,7 @@ function mostrarResultado(puntaje, total) {
             ${aprobado ? '¡Aprobado!' : 'Desaprobado'}
         </h3>
         <p style="margin: 0; font-size: 28px; color: white; font-weight: bold;">
-            ${puntaje} / ${total})
+            (${puntaje} / ${total})
         </p>
     `;
 

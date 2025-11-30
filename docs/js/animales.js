@@ -1,9 +1,11 @@
 const btnQuizAnimales = document.getElementById('QuizAnimales');
+
 if (btnQuizAnimales) {
     btnQuizAnimales.addEventListener('click', function () {
-        window.location.href = '../AnimalesPreguntas.html';
+        window.location.href = 'AnimalesPreguntas.html';
     });
 }
+
 
 
 const quizForm = document.querySelector('.quiz-form');
@@ -46,7 +48,6 @@ function mostrarResultado(puntaje, total) {
     }
 
     const aprobado = puntaje >= 7;
-    const porcentaje = ((puntaje / total) * 100).toFixed(0);
 
     const resultado = document.createElement('div');
     resultado.className = 'resultado';
@@ -63,7 +64,7 @@ function mostrarResultado(puntaje, total) {
             ${aprobado ? '¡Aprobado!' : 'Desaprobado'}
         </h3>
         <p style="margin: 0; font-size: 28px; color: white; font-weight: bold;">
-            ${puntaje} / ${total} (${porcentaje}%)
+            ${puntaje} / ${total}
         </p>
     `;
 
