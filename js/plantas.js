@@ -2,7 +2,7 @@
 const btnQuizPlantas = document.getElementById('QuizPlantas');
 if (btnQuizPlantas) {
     btnQuizPlantas.addEventListener('click', function () {
-        window.location.href = '../EstructuraHTML/PlantasPreguntas.html';
+        window.location.href = '../Docs/PlantasPreguntas.html';
     });
 }
 

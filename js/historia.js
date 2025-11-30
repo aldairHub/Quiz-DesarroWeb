@@ -2,7 +2,7 @@
 const btnQuizHistoria = document.getElementById('QuizHistoria');
 if (btnQuizHistoria) {
     btnQuizHistoria.addEventListener('click', function () {
-        window.location.href = '../EstructuraHTML/HistoriaPreguntas.html';
+        window.location.href = '../Docs/HistoriaPreguntas.html';
     });
 }
 
