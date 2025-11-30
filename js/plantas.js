@@ -1,7 +1,7 @@
 const btnQuizPlantas = document.getElementById('QuizPlantas');
 if (btnQuizPlantas) {
     btnQuizPlantas.addEventListener('click', function () {
-        window.location.href = '../Docs/PlantasPreguntas.html';
+        window.location.href = '../docs/PlantasPreguntas.html';
     });
 }
 

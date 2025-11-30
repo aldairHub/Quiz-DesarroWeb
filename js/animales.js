@@ -1,7 +1,7 @@
 const btnQuizAnimales = document.getElementById('QuizAnimales');
 if (btnQuizAnimales) {
     btnQuizAnimales.addEventListener('click', function () {
-        window.location.href = '../Docs/AnimalesPreguntas.html';
+        window.location.href = '../docs/AnimalesPreguntas.html';
     });
 }
 

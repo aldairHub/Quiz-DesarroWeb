@@ -2,7 +2,7 @@
 const btnQuizEspacio = document.getElementById('QuizEspacio');
 if (btnQuizEspacio) {
     btnQuizEspacio.addEventListener('click', function () {
-        window.location.href = '../Docs/EspacioPreguntas.html';
+        window.location.href = '../docs/EspacioPreguntas.html';
     });
 }
 

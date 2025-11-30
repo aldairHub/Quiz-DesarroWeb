@@ -1,7 +1,7 @@
 const btnQuizHistoria = document.getElementById('QuizHistoria');
 if (btnQuizHistoria) {
     btnQuizHistoria.addEventListener('click', function () {
-        window.location.href = '../Docs/HistoriaPreguntas.html';
+        window.location.href = '../docs/HistoriaPreguntas.html';
     });
 }
 
