@@ -1,15 +1,15 @@
 document.getElementById('btnAnimal').addEventListener('click', function () {
-    window.location.href = '../docs/Animales.html'
+    window.location.href = '../Animales.html'
 })
 
 document.getElementById('btnPlantas').addEventListener('click', function () {
-    window.location.href = '../docs/Plantas.html'
+    window.location.href = '../Plantas.html'
 })
 
 document.getElementById('btnPlanetas').addEventListener('click', function () {
-    window.location.href = '../docs/EspacioyPlanetas.html'
+    window.location.href = '../EspacioyPlanetas.html'
 })
 
 document.getElementById('btnHistoria').addEventListener('click', function () {
-    window.location.href = '../docs/Historia.html'
+    window.location.href = '../Historia.html'
 })

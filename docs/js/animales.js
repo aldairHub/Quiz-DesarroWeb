@@ -1,9 +1,10 @@
-const btnQuizHistoria = document.getElementById('QuizHistoria');
-if (btnQuizHistoria) {
-    btnQuizHistoria.addEventListener('click', function () {
-        window.location.href = '../docs/HistoriaPreguntas.html';
+const btnQuizAnimales = document.getElementById('QuizAnimales');
+if (btnQuizAnimales) {
+    btnQuizAnimales.addEventListener('click', function () {
+        window.location.href = '../AnimalesPreguntas.html';
     });
 }
+
 
 const quizForm = document.querySelector('.quiz-form');
 if (quizForm) {
@@ -13,14 +14,14 @@ if (quizForm) {
         const respuestasCorrectas = {
             p1: 'c',
             p2: 'b',
-            p3: 'c',
-            p4: 'b',
+            p3: 'd',
+            p4: 'c',
             p5: 'b',
-            p6: 'b',
+            p6: 'c',
             p7: 'c',
-            p8: 'b',
-            p9: 'c',
-            p10: 'c'
+            p8: 'c',
+            p9: 'd',
+            p10: 'b'
         };
 
         let puntaje = 0;
@@ -38,12 +39,14 @@ if (quizForm) {
 }
 
 function mostrarResultado(puntaje, total) {
+
     const resultadoAnterior = document.querySelector('.resultado');
     if (resultadoAnterior) {
         resultadoAnterior.remove();
     }
 
     const aprobado = puntaje >= 7;
+    const porcentaje = ((puntaje / total) * 100).toFixed(0);
 
     const resultado = document.createElement('div');
     resultado.className = 'resultado';
@@ -60,7 +63,7 @@ function mostrarResultado(puntaje, total) {
             ${aprobado ? '¡Aprobado!' : 'Desaprobado'}
         </h3>
         <p style="margin: 0; font-size: 28px; color: white; font-weight: bold;">
-            ${puntaje} / ${total})
+            ${puntaje} / ${total} (${porcentaje}%)
         </p>
     `;
 
@@ -80,7 +83,6 @@ function mostrarResultado(puntaje, total) {
     titulo.parentNode.insertBefore(contenedorTitulo, titulo);
     contenedorTitulo.appendChild(titulo);
     contenedorTitulo.appendChild(resultado);
-
 
     resultado.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
