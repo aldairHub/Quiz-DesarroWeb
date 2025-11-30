@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Plantas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/PreguntasPlantas.css">
     <link rel="icon" type="image/x-icon" href="icono/pregunta.ico">
 
@@ -16,19 +21,26 @@
 </head>
 <body>
 <main>
-    <header>
-        <a href="index.html" class="logo">
-            <img src="img/Logo.png" alt="Logo" class="Logo-img"/>
-            <h1>Quiz educativo</h1>
+    <header class="navbar navbar-expand-md">
+        <a href="index.html" class="logo navbar-brand d-flex align-items-center">
+            <img src="img/Logo.png" alt="Logo" class="Logo-img me-2"/>
+            <h1 class="h3 m-0">Quiz educativo</h1>
         </a>
-        <nav>
-            <a href="#" class="nav-link">Sobre Nosotros</a>
-            <a href="#" class="nav-link">Contacto</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse justify-content-end" id="menuNav">
+            <div class="navbar-nav">
+                <a href="#" class="nav-link">Sobre Nosotros</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </div>
         </nav>
     </header>
 
-    <section class="quiz-section">
-        <h2>Quiz: Plantas</h2>
+    <section class="quiz-section mt-4">
+        <h2 class="text-center">Quiz: Plantas</h2>
 
         <form class="quiz-form">
 

@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="icono/pregunta.ico">
 
@@ -15,25 +20,32 @@
 </head>
 <body>
     <main>
-        <header>
-            <a href="#" class="logo">
-                <img src="img/Logo.png" alt="Logo" class="Logo-img"/>
-                <h1>Quiz educativo</h1>
+        <header class="navbar navbar-expand-md">
+            <a href="#" class="logo navbar-brand d-flex align-items-center">
+                <img src="img/Logo.png" alt="Logo" class="Logo-img me-2"/>
+                <h1 class="h3 m-0">Quiz educativo</h1>
             </a>
-            <nav>
-                <a href="#" class="nav-link">Sobre Nosotros</a>
-                <a href="#" class="nav-link">Contacto</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="menuNav">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link">Sobre Nosotros</a>
+                    <a href="#" class="nav-link">Contacto</a>
+                </div>
             </nav>
         </header>
 
         <section>
-            <article class="Seccion">
-                <figure>
+            <article class="Seccion flex-column flex-md-row text-center text-md-start">
+                <figure class="mb-3 mb-md-0">
                     <img src="img/Animales.jpg" alt="Animales">
                 </figure>
 
                 <div class="contenido-texto">
-                    <h3>Animales</h3>
+                    <h2>Animales</h2>
                     <p class="descripcion">
                         En esta sección aprenderás sobre el increíble mundo de los animales:
                         cómo viven, qué comen, cuáles son sus principales y cómo se adaptan a diferentes entornos.
@@ -46,13 +58,13 @@
         </section>
 
         <section>
-            <article class="Seccion">
-                <figure>
+            <article class="Seccion flex-column flex-md-row text-center text-md-start">
+                <figure class="mb-3 mb-md-0">
                     <img src="img/Plantas.jpg" alt="Plantas">
                 </figure>
 
                 <div class="contenido-texto">
-                    <h3>Plantas y Naturaleza</h3>
+                    <h2>Plantas y Naturaleza</h2>
                     <p class="descripcion">
                         Aquí explorarás el mundo de las plantas y los ecosistemas: cómo crecen, qué necesitan para vivir y cuáles son sus partes.
                         Conocerás distintos tipos de plantas y ambientes naturales, y comprenderás por qué son tan importantes y cómo se relacionan con otros
@@ -63,13 +75,13 @@
             </article>
         </section>
         <section>
-            <article class="Seccion">
-                <figure>
+            <article class="Seccion flex-column flex-md-row text-center text-md-start">
+                <figure class="mb-3 mb-md-0">
                     <img src="img/Planetas.jpg" alt="Plantas">
                 </figure>
 
                 <div class="contenido-texto">
-                    <h3>Espacio y Planetas</h3>
+                    <h2>Espacio y Planetas</h2>
                     <p class="descripcion">
                         En esta sección viajarás más allá de la Tierra para aprender sobre el sistema solar, los planetas,
                         las estrellas, las galaxias y muchos otros misterios del universo. Descubrirás cómo se forman los
@@ -81,13 +93,13 @@
             </article>
         </section>
         <section>
-            <article class="Seccion">
-                <figure>
+            <article class="Seccion flex-column flex-md-row text-center text-md-start">
+                <figure class="mb-3 mb-md-0">
                     <img src="img/Historia.jpg" alt="Plantas">
                 </figure>
 
                 <div class="contenido-texto">
-                    <h3>Historia y Civilizaciones</h3>
+                    <h2>Historia y Civilizaciones</h2>
                     <p class="descripcion">
                         En esta sección viajarás al pasado para conocer cómo vivían las antiguas civilizaciones.
                         Aprenderás sobre culturas como los egipcios, griegos, mayas o romanos, sus costumbres, inventos,

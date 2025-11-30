@@ -115,3 +115,42 @@ a {
     background-color: #37448C;
     transform: scale(1.05);
 }
+
+@media (max-width: 600px) {
+
+    .quiz-section {
+        padding: 20px;
+    }
+
+    .quiz-section h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .quiz-form {
+        padding: 20px;
+    }
+
+    .pregunta {
+        padding: 15px;
+    }
+
+    .pregunta p {
+        font-size: 18px;
+    }
+
+    .pregunta label {
+        font-size: 16px;
+    }
+
+    .pregunta input[type="radio"] {
+        transform: scale(1.1);
+    }
+
+    .Boton {
+        font-size: 20px;
+        padding: 15px 40px;
+        width: 100%;
+        max-width: 280px;
+    }
+}
