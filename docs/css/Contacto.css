@@ -1,69 +1,72 @@
-*{
+* {
     font-family: "DynaPuff", system-ui;
-}
-
-body{
     margin: 0;
-    padding: 10px;
-    background-color: #A29BFE;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header{
+body {
+    padding: 10px;
+    background-color: #A29BFE;
+}
+
+header {
     display: flex;
     min-height: 90px;
-    padding: 5px;
+    padding: 20px;
     background-color: #FF6B6B;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
 }
 
-a{
+a {
     text-decoration: none;
+    color: white;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.logo img{
+.logo img {
     height: 50px;
 }
 
-.nav-link {
-    padding-right: 10px;
-    margin-left: 10px;
+.logo h1 {
+    font-size: 24px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    padding: 10px 20px;
     font-weight: bold;
-    transition: color, font-weight, 0.3s;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
-.nav-link:hover{
-    color: #A43CA6;
-    font-size: 18px;
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.navbar-toggler {
-    border-color: white;
-}
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-section{
+section {
     margin-top: 20px;
 }
 
 .Seccion-contacto {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 40px;
-    box-sizing: border-box;
 }
 
 .Seccion-contacto h2 {
@@ -78,27 +81,41 @@ section{
     margin-bottom: 30px;
 }
 
-.form-label {
+form section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
     color: #333;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-.form-control, .form-select {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 12px;
     font-size: 16px;
-    transition: all 0.3s;
+    font-family: "DynaPuff", system-ui;
 }
 
-.form-control:focus, .form-select:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
     border-color: #4ECDC4;
-    box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
 }
 
-.form-control.is-invalid {
+input.is-invalid,
+select.is-invalid,
+textarea.is-invalid {
     border-color: #FF6B6B;
 }
 
@@ -106,11 +123,25 @@ section{
     color: #FF6B6B;
     font-size: 14px;
     margin-top: 5px;
+    display: none;
 }
 
-textarea.form-control {
+input.is-invalid ~ .invalid-feedback,
+select.is-invalid ~ .invalid-feedback,
+textarea.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+.contenedor-boton {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .Boton {
@@ -121,18 +152,14 @@ textarea.form-control {
     background-color: #4ECDC4;
     color: white;
     cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .Boton:hover {
     background-color: #37448C;
-    transform: scale(1.05);
 }
 
 .mensaje-exito {
-    display: inline-block;
-    margin-left: 20px;
     color: #4ECDC4;
     font-weight: bold;
     font-size: 18px;
@@ -142,13 +169,6 @@ textarea.form-control {
 
 .mensaje-exito.mostrar {
     opacity: 1;
-}
-
-.contenedor-boton {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
 footer {
@@ -163,24 +183,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .Seccion-contacto {
-        padding: 25px;
-    }
-
-    .Seccion-contacto h2 {
-        font-size: 32px;
-    }
-
-    .mensaje-exito {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 15px;
-    }
 }

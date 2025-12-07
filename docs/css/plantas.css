@@ -1,20 +1,19 @@
-*{
+* {
     font-family: "DynaPuff", system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     padding: 10px;
-    font-weight: 300;
-    font-style: normal;
     background-color: #A29BFE;
-    box-sizing: border-box;
 }
 
 header {
     display: flex;
     min-height: 90px;
-    padding: 5px;
+    padding: 20px;
     background-color: #FF6B6B;
     justify-content: space-between;
     align-items: center;
@@ -29,29 +28,33 @@ a {
 .logo {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .logo img {
     height: 50px;
 }
 
-.nav-link {
-    padding-right: 10px;
-    margin-left: 10px;
+.logo h1 {
+    font-size: 24px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    padding: 10px 20px;
     font-weight: bold;
-    transition: color, font-weight, 0.3s;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
-.nav-link:hover {
-    color: #A43CA6;
-    font-size: 18px;
-}
-
-.navbar-toggler {
-    border-color: white;
-}
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 section {
@@ -154,19 +157,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .Seccion figure {
-        width: 100% !important;
-    }
-
-    .Seccion figure img {
-        height: auto !important;
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 15px;
-    }
 }

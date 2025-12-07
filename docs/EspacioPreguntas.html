@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Espacio y Planetas</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="css/PreguntasEspacio.css">
     <link rel="icon" type="image/x-icon" href="icono/iconoQuiz.ico">
 
@@ -20,115 +16,109 @@
 
 </head>
 <body>
-    <main>
-        <header class="navbar navbar-expand-md">
-            <a href="index.html" class="logo navbar-brand d-flex align-items-center">
-                <img src="img/Logo.png" alt="Logo" class="Logo-img me-2"/>
-                <h1 class="h3 m-0">Quiz educativo</h1>
-            </a>
+<main>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/Logo.png" alt="Logo" class="Logo-img"/>
+            <h1>Quiz educativo</h1>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav>
+            <a href="SobreNosotros.html">Sobre Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-            <nav class="collapse navbar-collapse justify-content-end" id="menuNav">
-                <div class="navbar-nav">
-                    <a href="SobreNosotros.html" class="nav-link">Sobre Nosotros</a>
-                    <a href="Contacto.html" class="nav-link">Contacto</a>
-                </div>
-            </nav>
-        </header>
+    <section class="quiz-section">
+        <h2>Quiz: Espacio y Planetas</h2>
 
-        <section class="quiz-section mt-4">
-            <h2  class="text-center">Quiz: Espacio y Planetas</h2>
+        <form class="quiz-form">
+            <div class="pregunta">
+                <p>1. ¿Qué objeto se encuentra en el centro del sistema solar?</p>
+                <label><input type="radio" name="p1" value="a"> a) La Luna</label><br>
+                <label><input type="radio" name="p1" value="b"> b) La Tierra</label><br>
+                <label><input type="radio" name="p1" value="c"> c) El Sol</label><br>
+                <label><input type="radio" name="p1" value="d"> d) Marte</label>
+            </div>
 
-            <form class="quiz-form">
-                <div class="pregunta">
-                    <p>1. ¿Qué objeto se encuentra en el centro del sistema solar?</p>
-                    <label><input type="radio" name="p1" value="a"> a) La Luna</label><br>
-                    <label><input type="radio" name="p1" value="b"> b) La Tierra</label><br>
-                    <label><input type="radio" name="p1" value="c"> c) El Sol</label><br>
-                    <label><input type="radio" name="p1" value="d"> d) Marte</label>
-                </div>
+            <div class="pregunta">
+                <p>2. ¿Qué tipo de planetas son Júpiter y Saturno?</p>
+                <label><input type="radio" name="p2" value="a"> a) Rocosos</label><br>
+                <label><input type="radio" name="p2" value="b"> b) Gaseosos</label><br>
+                <label><input type="radio" name="p2" value="c"> c) Enanos</label><br>
+                <label><input type="radio" name="p2" value="d"> d) Helados</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>2. ¿Qué tipo de planetas son Júpiter y Saturno?</p>
-                    <label><input type="radio" name="p2" value="a"> a) Rocosos</label><br>
-                    <label><input type="radio" name="p2" value="b"> b) Gaseosos</label><br>
-                    <label><input type="radio" name="p2" value="c"> c) Enanos</label><br>
-                    <label><input type="radio" name="p2" value="d"> d) Helados</label>
-                </div>
+            <div class="pregunta">
+                <p>3. ¿Cómo se llama nuestra galaxia?</p>
+                <label><input type="radio" name="p3" value="a"> a) Andrómeda</label><br>
+                <label><input type="radio" name="p3" value="b"> b) Vía Láctea</label><br>
+                <label><input type="radio" name="p3" value="c"> c) Centauro A</label><br>
+                <label><input type="radio" name="p3" value="d"> d) Sombrero</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>3. ¿Cómo se llama nuestra galaxia?</p>
-                    <label><input type="radio" name="p3" value="a"> a) Andrómeda</label><br>
-                    <label><input type="radio" name="p3" value="b"> b) Vía Láctea</label><br>
-                    <label><input type="radio" name="p3" value="c"> c) Centauro A</label><br>
-                    <label><input type="radio" name="p3" value="d"> d) Sombrero</label>
-                </div>
+            <div class="pregunta">
+                <p>4. ¿Qué planeta es conocido como el "planeta rojo"?</p>
+                <label><input type="radio" name="p4" value="a"> a) Venus</label><br>
+                <label><input type="radio" name="p4" value="b"> b) Marte</label><br>
+                <label><input type="radio" name="p4" value="c"> c) Mercurio</label><br>
+                <label><input type="radio" name="p4" value="d"> d) Júpiter</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>4. ¿Qué planeta es conocido como el “planeta rojo”?</p>
-                    <label><input type="radio" name="p4" value="a"> a) Venus</label><br>
-                    <label><input type="radio" name="p4" value="b"> b) Marte</label><br>
-                    <label><input type="radio" name="p4" value="c"> c) Mercurio</label><br>
-                    <label><input type="radio" name="p4" value="d"> d) Júpiter</label>
-                </div>
+            <div class="pregunta">
+                <p>5. ¿Qué produce la luz y el calor de las estrellas?</p>
+                <label><input type="radio" name="p5" value="a"> a) Su núcleo sólido</label><br>
+                <label><input type="radio" name="p5" value="b"> b) Reacciones químicas simples</label><br>
+                <label><input type="radio" name="p5" value="c"> c) Reacciones que ocurren en su interior</label><br>
+                <label><input type="radio" name="p5" value="d"> d) La velocidad del viento estelar</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>5. ¿Qué produce la luz y el calor de las estrellas?</p>
-                    <label><input type="radio" name="p5" value="a"> a) Su núcleo sólido</label><br>
-                    <label><input type="radio" name="p5" value="b"> b) Reacciones químicas simples</label><br>
-                    <label><input type="radio" name="p5" value="c"> c) Reacciones que ocurren en su interior</label><br>
-                    <label><input type="radio" name="p5" value="d"> d) La velocidad del viento estelar</label>
-                </div>
+            <div class="pregunta">
+                <p>6. ¿Qué nombre recibe el conjunto de estrellas, planetas y gas unidos por gravedad?</p>
+                <label><input type="radio" name="p6" value="a"> a) Meteorito</label><br>
+                <label><input type="radio" name="p6" value="b"> b) Sistema solar</label><br>
+                <label><input type="radio" name="p6" value="c"> c) Nebulosa</label><br>
+                <label><input type="radio" name="p6" value="d"> d) Galaxia</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>6. ¿Qué nombre recibe el conjunto de estrellas, planetas y gas unidos por gravedad?</p>
-                    <label><input type="radio" name="p6" value="a"> a) Meteorito</label><br>
-                    <label><input type="radio" name="p6" value="b"> b) Sistema solar</label><br>
-                    <label><input type="radio" name="p6" value="c"> c) Nebulosa</label><br>
-                    <label><input type="radio" name="p6" value="d"> d) Galaxia</label>
-                </div>
+            <div class="pregunta">
+                <p>7. ¿Cuál es el planeta más cercano al Sol?</p>
+                <label><input type="radio" name="p7" value="a"> a) Marte</label><br>
+                <label><input type="radio" name="p7" value="b"> b) Venus</label><br>
+                <label><input type="radio" name="p7" value="c"> c) Mercurio</label><br>
+                <label><input type="radio" name="p7" value="d"> d) Tierra</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>7. ¿Cuál es el planeta más cercano al Sol?</p>
-                    <label><input type="radio" name="p7" value="a"> a) Marte</label><br>
-                    <label><input type="radio" name="p7" value="b"> b) Venus</label><br>
-                    <label><input type="radio" name="p7" value="c"> c) Mercurio</label><br>
-                    <label><input type="radio" name="p7" value="d"> d) Tierra</label>
-                </div>
+            <div class="pregunta">
+                <p>8. ¿Qué instrumento se usa para observar galaxias lejanas?</p>
+                <label><input type="radio" name="p8" value="a"> a) Microscopio</label><br>
+                <label><input type="radio" name="p8" value="b"> b) Telescopio</label><br>
+                <label><input type="radio" name="p8" value="c"> c) Radar</label><br>
+                <label><input type="radio" name="p8" value="d"> d) Prismáticos</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>8. ¿Qué instrumento se usa para observar galaxias lejanas?</p>
-                    <label><input type="radio" name="p8" value="a"> a) Microscopio</label><br>
-                    <label><input type="radio" name="p8" value="b"> b) Telescopio</label><br>
-                    <label><input type="radio" name="p8" value="c"> c) Radar</label><br>
-                    <label><input type="radio" name="p8" value="d"> d) Prismáticos</label>
-                </div>
+            <div class="pregunta">
+                <p>9. ¿Qué misión permite estudiar planetas y galaxias sin salir de la Tierra?</p>
+                <label><input type="radio" name="p9" value="a"> a) Robots submarinos</label><br>
+                <label><input type="radio" name="p9" value="b"> b) Telescopios espaciales</label><br>
+                <label><input type="radio" name="p9" value="c"> c) Sondeo de cuevas</label><br>
+                <label><input type="radio" name="p9" value="d"> d) Drones atmosféricos</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>9. ¿Qué misión permite estudiar planetas y galaxias sin salir de la Tierra?</p>
-                    <label><input type="radio" name="p9" value="a"> a) Robots submarinos</label><br>
-                    <label><input type="radio" name="p9" value="b"> b) Telescopios espaciales</label><br>
-                    <label><input type="radio" name="p9" value="c"> c) Sondeo de cuevas</label><br>
-                    <label><input type="radio" name="p9" value="d"> d) Drones atmosféricos</label>
-                </div>
+            <div class="pregunta">
+                <p>10. ¿Qué nave ha viajado más lejos del sistema solar?</p>
+                <label><input type="radio" name="p10" value="a"> a) Apolo 11</label><br>
+                <label><input type="radio" name="p10" value="b"> b) Voyager</label><br>
+                <label><input type="radio" name="p10" value="c"> c) Hubble</label><br>
+                <label><input type="radio" name="p10" value="d"> d) Curiosity</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>10. ¿Qué nave ha viajado más lejos del sistema solar?</p>
-                    <label><input type="radio" name="p10" value="a"> a) Apolo 11</label><br>
-                    <label><input type="radio" name="p10" value="b"> b) Voyager</label><br>
-                    <label><input type="radio" name="p10" value="c"> c) Hubble</label><br>
-                    <label><input type="radio" name="p10" value="d"> d) Curiosity</label>
-                </div>
-
-                <button type="submit" class="Boton">Enviar respuestas</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Quiz Educativo. Todos los derechos reservados.</p>
-    </footer>
+            <button type="submit" class="Boton">Enviar respuestas</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Quiz Educativo. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

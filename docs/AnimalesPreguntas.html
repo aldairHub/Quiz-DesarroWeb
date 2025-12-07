@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Animales</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <link rel="stylesheet" href="css/PreguntasAnimales.css">
     <link rel="icon" type="image/x-icon" href="icono/iconoQuiz.ico">
 
@@ -19,115 +15,109 @@
     <script src="js/animales.js" defer></script>
 </head>
 <body>
-    <main>
-        <header class="navbar navbar-expand-md">
-            <a href="index.html" class="logo navbar-brand d-flex align-items-center">
-                <img src="img/Logo.png" alt="Logo" class="Logo-img me-2"/>
-                <h1 class="h3 m-0">Quiz educativo</h1>
-            </a>
+<main>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/Logo.png" alt="Logo" class="Logo-img"/>
+            <h1>Quiz educativo</h1>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav>
+            <a href="SobreNosotros.html">Sobre Nosotros</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-            <nav class="collapse navbar-collapse justify-content-end" id="menuNav">
-                <div class="navbar-nav">
-                    <a href="SobreNosotros.html" class="nav-link">Sobre Nosotros</a>
-                    <a href="Contacto.html" class="nav-link">Contacto</a>
-                </div>
-            </nav>
-        </header>
+    <section class="quiz-section">
+        <h2>Quiz: Animales</h2>
 
-        <section class="quiz-section mt-4">
-            <h2 class="text-center">Quiz: Animales</h2>
+        <form class="quiz-form">
+            <div class="pregunta">
+                <p>1. ¿Qué característica distingue a los mamíferos?</p>
+                <label><input type="radio" name="p1" value="a"> a) Ponen huevos</label><br>
+                <label><input type="radio" name="p1" value="b"> b) Tienen sangre fría</label><br>
+                <label><input type="radio" name="p1" value="c"> c) Alimentan a sus crías con leche</label><br>
+                <label><input type="radio" name="p1" value="d"> d) Tienen escamas</label>
+            </div>
 
-            <form class="quiz-form">
-                <div class="pregunta">
-                    <p>1. ¿Qué característica distingue a los mamíferos?</p>
-                    <label><input type="radio" name="p1" value="a"> a) Ponen huevos</label><br>
-                    <label><input type="radio" name="p1" value="b"> b) Tienen sangre fría</label><br>
-                    <label><input type="radio" name="p1" value="c"> c) Alimentan a sus crías con leche</label><br>
-                    <label><input type="radio" name="p1" value="d"> d) Tienen escamas</label>
-                </div>
+            <div class="pregunta">
+                <p>2. ¿Qué estructura tienen las aves en lugar de dientes?</p>
+                <label><input type="radio" name="p2" value="a"> a) Mandíbulas</label><br>
+                <label><input type="radio" name="p2" value="b"> b) Pico</label><br>
+                <label><input type="radio" name="p2" value="c"> c) Lengua larga</label><br>
+                <label><input type="radio" name="p2" value="d"> d) Garras</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>2. ¿Qué estructura tienen las aves en lugar de dientes?</p>
-                    <label><input type="radio" name="p2" value="a"> a) Mandíbulas</label><br>
-                    <label><input type="radio" name="p2" value="b"> b) Pico</label><br>
-                    <label><input type="radio" name="p2" value="c"> c) Lengua larga</label><br>
-                    <label><input type="radio" name="p2" value="d"> d) Garras</label>
-                </div>
+            <div class="pregunta">
+                <p>3. ¿Cuál de estos animales NO pertenece a los reptiles?</p>
+                <label><input type="radio" name="p3" value="a"> a) Tortuga</label><br>
+                <label><input type="radio" name="p3" value="b"> b) Serpiente</label><br>
+                <label><input type="radio" name="p3" value="c"> c) Lagarto</label><br>
+                <label><input type="radio" name="p3" value="d"> d) Pingüino</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>3. ¿Cuál de estos animales NO pertenece a los reptiles?</p>
-                    <label><input type="radio" name="p3" value="a"> a) Tortuga</label><br>
-                    <label><input type="radio" name="p3" value="b"> b) Serpiente</label><br>
-                    <label><input type="radio" name="p3" value="c"> c) Lagarto</label><br>
-                    <label><input type="radio" name="p3" value="d"> d) Pingüino</label>
-                </div>
+            <div class="pregunta">
+                <p>4. ¿Cuántas patas tienen los insectos?</p>
+                <label><input type="radio" name="p4" value="a"> a) Dos</label><br>
+                <label><input type="radio" name="p4" value="b"> b) Cuatro</label><br>
+                <label><input type="radio" name="p4" value="c"> c) Seis</label><br>
+                <label><input type="radio" name="p4" value="d"> d) Ocho</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>4. ¿Cuántas patas tienen los insectos?</p>
-                    <label><input type="radio" name="p4" value="a"> a) Dos</label><br>
-                    <label><input type="radio" name="p4" value="b"> b) Cuatro</label><br>
-                    <label><input type="radio" name="p4" value="c"> c) Seis</label><br>
-                    <label><input type="radio" name="p4" value="d"> d) Ocho</label>
-                </div>
+            <div class="pregunta">
+                <p>5. ¿Cuál de los siguientes animales es marino?</p>
+                <label><input type="radio" name="p5" value="a"> a) Gorila</label><br>
+                <label><input type="radio" name="p5" value="b"> b) Ballena</label><br>
+                <label><input type="radio" name="p5" value="c"> c) Avestruz</label><br>
+                <label><input type="radio" name="p5" value="d"> d) Lagartija</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>5. ¿Cuál de los siguientes animales es marino?</p>
-                    <label><input type="radio" name="p5" value="a"> a) Gorila</label><br>
-                    <label><input type="radio" name="p5" value="b"> b) Ballena</label><br>
-                    <label><input type="radio" name="p5" value="c"> c) Avestruz</label><br>
-                    <label><input type="radio" name="p5" value="d"> d) Lagartija</label>
-                </div>
+            <div class="pregunta">
+                <p>6. ¿Qué animal es un mamífero?</p>
+                <label><input type="radio" name="p6" value="a"> a) Tiburón</label><br>
+                <label><input type="radio" name="p6" value="b"> b) Cocodrilo</label><br>
+                <label><input type="radio" name="p6" value="c"> c) Elefante</label><br>
+                <label><input type="radio" name="p6" value="d"> d) Pingüino</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>6. ¿Qué animal es un mamífero?</p>
-                    <label><input type="radio" name="p6" value="a"> a) Tiburón</label><br>
-                    <label><input type="radio" name="p6" value="b"> b) Cocodrilo</label><br>
-                    <label><input type="radio" name="p6" value="c"> c) Elefante</label><br>
-                    <label><input type="radio" name="p6" value="d"> d) Pingüino</label>
-                </div>
+            <div class="pregunta">
+                <p>7. ¿Cuál de estos animales puede volar?</p>
+                <label><input type="radio" name="p7" value="a"> a) Avestruz</label><br>
+                <label><input type="radio" name="p7" value="b"> b) Pingüino</label><br>
+                <label><input type="radio" name="p7" value="c"> c) Mariposa</label><br>
+                <label><input type="radio" name="p7" value="d"> d) Tortuga</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>7. ¿Cuál de estos animales puede volar?</p>
-                    <label><input type="radio" name="p7" value="a"> a) Avestruz</label><br>
-                    <label><input type="radio" name="p7" value="b"> b) Pingüino</label><br>
-                    <label><input type="radio" name="p7" value="c"> c) Mariposa</label><br>
-                    <label><input type="radio" name="p7" value="d"> d) Tortuga</label>
-                </div>
+            <div class="pregunta">
+                <p>8. ¿Qué característica tienen los reptiles?</p>
+                <label><input type="radio" name="p8" value="a"> a) Tienen plumas</label><br>
+                <label><input type="radio" name="p8" value="b"> b) Tienen pelaje</label><br>
+                <label><input type="radio" name="p8" value="c"> c) Son de sangre fría</label><br>
+                <label><input type="radio" name="p8" value="d"> d) Respiran bajo el agua</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>8. ¿Qué característica tienen los reptiles?</p>
-                    <label><input type="radio" name="p8" value="a"> a) Tienen plumas</label><br>
-                    <label><input type="radio" name="p8" value="b"> b) Tienen pelaje</label><br>
-                    <label><input type="radio" name="p8" value="c"> c) Son de sangre fría</label><br>
-                    <label><input type="radio" name="p8" value="d"> d) Respiran bajo el agua</label>
-                </div>
+            <div class="pregunta">
+                <p>9. ¿Cuál de los siguientes NO es un insecto?</p>
+                <label><input type="radio" name="p9" value="a"> a) Abeja</label><br>
+                <label><input type="radio" name="p9" value="b"> b) Libélula</label><br>
+                <label><input type="radio" name="p9" value="c"> c) Mariposa</label><br>
+                <label><input type="radio" name="p9" value="d"> d) Sapo</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>9. ¿Cuál de los siguientes NO es un insecto?</p>
-                    <label><input type="radio" name="p9" value="a"> a) Abeja</label><br>
-                    <label><input type="radio" name="p9" value="b"> b) Libélula</label><br>
-                    <label><input type="radio" name="p9" value="c"> c) Mariposa</label><br>
-                    <label><input type="radio" name="p9" value="d"> d) Sapo</label>
-                </div>
+            <div class="pregunta">
+                <p>10. ¿Qué animales usan branquias para respirar?</p>
+                <label><input type="radio" name="p10" value="a"> a) Perros</label><br>
+                <label><input type="radio" name="p10" value="b"> b) Peces</label><br>
+                <label><input type="radio" name="p10" value="c"> c) Mamíferos marinos</label><br>
+                <label><input type="radio" name="p10" value="d"> d) Aves</label>
+            </div>
 
-                <div class="pregunta">
-                    <p>10. ¿Qué animales usan branquias para respirar?</p>
-                    <label><input type="radio" name="p10" value="a"> a) Perros</label><br>
-                    <label><input type="radio" name="p10" value="b"> b) Peces</label><br>
-                    <label><input type="radio" name="p10" value="c"> c) Mamíferos marinos</label><br>
-                    <label><input type="radio" name="p10" value="d"> d) Aves</label>
-                </div>
-
-                <button type="submit" class="Boton">Enviar respuestas</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Quiz Educativo. Todos los derechos reservados.</p>
-    </footer>
+            <button type="submit" class="Boton">Enviar respuestas</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Quiz Educativo. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
